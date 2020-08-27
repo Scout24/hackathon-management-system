@@ -172,22 +172,22 @@ functions:
               - X-Amz-User-Agent
             allowCredentials: false
 
-    deleteIdea:
-      handler: idea/delete.delete
-      events:
-        - http:
-            path: idea/{id}
-            method: delete
-            cors:
-              origin: '*'
-              headers:
-                - Content-Type
-                - X-Amz-Date
-                - Authorization
-                - X-Api-Key
-                - X-Amz-Security-Token
-                - X-Amz-User-Agent
-              allowCredentials: false
+  deleteIdea:
+    handler: idea/delete.delete
+    events:
+      - http:
+          path: idea/{id}
+          method: delete
+          cors:
+            origin: '*'
+            headers:
+              - Content-Type
+              - X-Amz-Date
+              - Authorization
+              - X-Api-Key
+              - X-Amz-Security-Token
+              - X-Amz-User-Agent
+            allowCredentials: false
 
   createUser:
     handler: user/create.create
@@ -219,56 +219,56 @@ functions:
               - X-Amz-User-Agent
             allowCredentials: false
 
-    listAllUser:
-      handler: user/list.list
-      events:
-        - http:
-            path: user
-            method: get
-            cors:
-              origin: '*'
-              headers:
-                - Content-Type
-                - X-Amz-Date
-                - Authorization
-                - X-Api-Key
-                - X-Amz-Security-Token
-                - X-Amz-User-Agent
-              allowCredentials: false
+  listAllUser:
+    handler: user/list.list
+    events:
+      - http:
+          path: user
+          method: get
+          cors:
+            origin: '*'
+            headers:
+              - Content-Type
+              - X-Amz-Date
+              - Authorization
+              - X-Api-Key
+              - X-Amz-Security-Token
+              - X-Amz-User-Agent
+            allowCredentials: false
 
-    getUser:
-      handler: user/get.get
-      events:
-        - http:
-            path: user/{id}
-            method: get
-            cors:
-              origin: '*'
-              headers:
-                - Content-Type
-                - X-Amz-Date
-                - Authorization
-                - X-Api-Key
-                - X-Amz-Security-Token
-                - X-Amz-User-Agent
-              allowCredentials: false
+  getUser:
+    handler: user/get.get
+    events:
+      - http:
+          path: user/{id}
+          method: get
+          cors:
+            origin: '*'
+            headers:
+              - Content-Type
+              - X-Amz-Date
+              - Authorization
+              - X-Api-Key
+              - X-Amz-Security-Token
+              - X-Amz-User-Agent
+            allowCredentials: false
 
-      deleteUser:
-        handler: user/delete.delete
-        events:
-          - http:
-              path: user/{id}
-              method: delete
-              cors:
-                origin: '*'
-                headers:
-                  - Content-Type
-                  - X-Amz-Date
-                  - Authorization
-                  - X-Api-Key
-                  - X-Amz-Security-Token
-                  - X-Amz-User-Agent
-                allowCredentials: false
+  deleteUser:
+    handler: user/delete.delete
+    events:
+      - http:
+          path: user/{id}
+          method: delete
+          cors:
+            origin: '*'
+            headers:
+              - Content-Type
+              - X-Amz-Date
+              - Authorization
+              - X-Api-Key
+              - X-Amz-Security-Token
+              - X-Amz-User-Agent
+            allowCredentials: false
 
   createCategory:
     handler: category/create.create
@@ -300,56 +300,56 @@ functions:
               - X-Amz-User-Agent
             allowCredentials: false
 
-    listAllCategory:
-      handler: category/list.list
-      events:
-        - http:
-            path: category
-            method: get
-            cors:
-              origin: '*'
-              headers:
-                - Content-Type
-                - X-Amz-Date
-                - Authorization
-                - X-Api-Key
-                - X-Amz-Security-Token
-                - X-Amz-User-Agent
-              allowCredentials: false
+  listAllCategory:
+    handler: category/list.list
+    events:
+      - http:
+          path: category
+          method: get
+          cors:
+            origin: '*'
+            headers:
+              - Content-Type
+              - X-Amz-Date
+              - Authorization
+              - X-Api-Key
+              - X-Amz-Security-Token
+              - X-Amz-User-Agent
+            allowCredentials: false
 
-    getCategory:
-      handler: category/get.get
-      events:
-        - http:
-            path: user/{id}
-            method: get
-            cors:
-              origin: '*'
-              headers:
-                - Content-Type
-                - X-Amz-Date
-                - Authorization
-                - X-Api-Key
-                - X-Amz-Security-Token
-                - X-Amz-User-Agent
-              allowCredentials: false
+  getCategory:
+    handler: category/get.get
+    events:
+      - http:
+          path: category/{id}
+          method: get
+          cors:
+            origin: '*'
+            headers:
+              - Content-Type
+              - X-Amz-Date
+              - Authorization
+              - X-Api-Key
+              - X-Amz-Security-Token
+              - X-Amz-User-Agent
+            allowCredentials: false
 
-      deleteCategory:
-        handler: category/delete.delete
-        events:
-          - http:
-              path: category/{id}
-              method: delete
-              cors:
-                origin: '*'
-                headers:
-                  - Content-Type
-                  - X-Amz-Date
-                  - Authorization
-                  - X-Api-Key
-                  - X-Amz-Security-Token
-                  - X-Amz-User-Agent
-                allowCredentials: false
+  deleteCategory:
+    handler: category/delete.delete
+    events:
+      - http:
+          path: category/{id}
+          method: delete
+          cors:
+            origin: '*'
+            headers:
+              - Content-Type
+              - X-Amz-Date
+              - Authorization
+              - X-Api-Key
+              - X-Amz-Security-Token
+              - X-Amz-User-Agent
+            allowCredentials: false
 
 resources:
   Resources:
