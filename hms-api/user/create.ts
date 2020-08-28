@@ -25,10 +25,10 @@ module.exports.create = (event, context, callback) => {
   const params = {
     TableName: 'user',
     Item: {
-      id: data.id,
+      id: JSON.parse(data.id),
       email: data.email,
       name: data.name,
-      authInfo: data.authInfo,
+      auth_info: data.auth_info,
       createdAt: timestamp,
       updatedAt: timestamp
     }

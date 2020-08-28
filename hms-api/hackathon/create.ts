@@ -31,6 +31,7 @@ module.exports.create = (event, context, callback) => {
       startDate: data.startDate,
       endDate: data.endDate,
       maxPitchTime: data.maxPitchTime,
+      categories: data.categories,
       createdAt: timestamp,
       updatedAt: timestamp
     }
