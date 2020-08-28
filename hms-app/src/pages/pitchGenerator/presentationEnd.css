@@ -1,0 +1,100 @@
+.dvd-container {
+    position: relative;
+    min-height: calc(100vh - 210px);
+    width: 100vw;
+    overflow: hidden;
+    border-top: 5px solid #00FFD0;
+}
+
+.dvd-container span {
+    padding-top: 10px;
+    width: 250px;
+    height: 170px;
+    display: block;
+    border-radius: 50px;
+    background-color: #5c5c5c;
+    position: absolute;
+    text-align: center;
+    -webkit-animation: moveX 8.05s linear 0s infinite alternate, moveY 8.4s linear 0s infinite alternate;
+    -moz-animation: moveX 8.05s linear 0s infinite alternate, moveY 8.4s linear 0s infinite alternate;
+    -o-animation: moveX 8.05s linear 0s infinite alternate, moveY 8.4s linear 0s infinite alternate;
+    animation: moveX 8.05s linear 0s infinite alternate, moveY 8.4s linear 0s infinite alternate;
+    box-shadow: 0 0 30px #111111;
+    z-index: 2;
+}
+
+.hw-tiles-presentation-end {
+    background-color: rgba(0,0,0,0);
+    position: absolute;
+    background-image: url("../../images/tile_transparent.png");
+    background-repeat: repeat;
+    height: 100%;
+    width: 100%;
+}
+
+.tiles-1 {
+    -webkit-animation: tileMatrix 10s linear 0s infinite normal;
+    -moz-animation: tileMatrix 10s linear 0s infinite normal;
+    -o-animation: tileMatrix 10s linear 0s infinite normal;
+    animation: tileMatrix 10s linear 0s infinite normal;
+}
+
+.tiles-2 {
+    -webkit-animation: tileMatrix2 10s linear 0s infinite normal;
+    -moz-animation: tileMatrix2 10s linear 0s infinite normal;
+    -o-animation: tileMatrix2 10s linear 0s infinite normal;
+    animation: tileMatrix2 10s linear 0s infinite normal;
+}
+
+@-webkit-keyframes moveX {
+    from { left: 0; } to { left: calc(100% - 250px); }
+}
+@-moz-keyframes moveX {
+    from { left: 0; } to { left: calc(100% - 250px); }
+}
+@-o-keyframes moveX {
+    from { left: 0; } to { left: calc(100% - 250px); }
+}
+@keyframes moveX {
+    from { left: 0; } to { left: calc(100% - 250px); }
+}
+
+@-webkit-keyframes moveY {
+    from { top: 0; } to { top: calc(100% - 170px); }
+}
+@-moz-keyframes moveY {
+    from { top: 0; } to { top: calc(100% - 170px); }
+}
+@-o-keyframes moveY {
+    from { top: 0; } to { top: calc(100% - 170px); }
+}
+@keyframes moveY {
+    from { top: 0; } to { top: calc(100% - 170px); }
+}
+
+
+@-webkit-keyframes tileMatrix {
+    from { top: 0; } to { top: 80vh; }
+}
+@-moz-keyframes tileMatrix {
+    from { top: 0; } to { top: 80vh; }
+}
+@-o-keyframes tileMatrix {
+    from { top: 0; } to { top: 80vh; }
+}
+@keyframes tileMatrix {
+    from { top: 0; } to { top: 80vh; }
+}
+
+@-webkit-keyframes tileMatrix2 {
+    from { top: -100%; } to { top: calc(80vh - 100%); }
+}
+@-moz-keyframes tileMatrix2 {
+    from { top: -100%; } to { top: calc(80vh - 100%); }
+}
+@-o-keyframes tileMatrix2 {
+    from { top: -100%; } to { top: calc(80vh - 100%); }
+}
+@keyframes tileMatrix2 {
+    from { top: -100%; } to { top: calc(80vh - 100%); }
+}

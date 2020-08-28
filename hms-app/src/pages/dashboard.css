@@ -1,0 +1,10 @@
+.item-card {
+    padding: 20px;
+    margin: 30px;
+    background: #5c5c5c;
+    border-radius: 25px;
+}
+
+.item-card .button {
+    margin: 0 10px;
+}
