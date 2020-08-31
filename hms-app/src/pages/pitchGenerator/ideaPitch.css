@@ -1,0 +1,281 @@
+.pitch-bar {
+    background: #858585;
+    position: relative;
+}
+
+.pitch-bar .home-button {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translate(0, -50%);
+    background: #5C5C5C;
+    padding: 10px 10px 8px 10px;
+    border-radius: 100%;
+}
+
+.pitch-bar span img {
+    width: 20px;
+}
+
+.pitch-bar h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 0;
+    line-height: 50px;
+}
+
+.pitch-bar .fullscreen-button {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translate(0, -50%);
+    background: #5C5C5C;
+    padding: 10px 10px 4px 10px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.pitch-bar button img {
+    width: 20px;
+}
+
+.pitch-header {
+    padding: 30px 25px 0 25px;
+}
+
+.pitch-author {
+    color: #D6D6D6;
+}
+
+.pitch-votes {
+    margin-top: 30px;
+    background-image: url("../../images/teal_marker_votes.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.pitch-votes div {
+    padding: 40px 0;
+    color: #333333;
+    font-weight: bold;
+    line-height: 3rem;
+}
+
+.pitch-votes span {
+    font-size: 5rem;
+}
+
+.pitch-votes p {
+    font-size: 2rem;
+}
+
+.pitch-card {
+    padding: 30px 40px;
+    margin: 24px 12px 0 12px;
+    background: #535353;
+    border: 3px solid #858585;
+    border-radius: 25px;
+    overflow: auto;
+}
+
+.hypothesis {
+    max-height: 35vh;
+}
+
+.idea-team {
+    max-height: 20vh;
+}
+
+.benefit {
+    max-height: 40vh;
+}
+
+.pitch-category span {
+    display: inline;
+    margin: 25px 25px 0 0;
+    background: #5C5C5C;
+    padding: 15px 20px;
+    font-weight: bold;
+    border-radius: 50px;
+}
+
+.pitch-video-button {
+    font-size: 2rem;
+    width: calc(100% - 24px);
+    margin: 24px 12px 0 12px;
+}
+
+.pitch-video-button img {
+    height: 20px;
+}
+
+.timer-button {
+    font-size: 2rem;
+    width: calc(100% - 24px);
+    margin: 24px 12px 0 12px;
+}
+
+.navigation-link {
+    position: absolute;
+    bottom: 0;
+}
+
+.back {
+    left: 0;
+}
+
+.forth {
+    right: 0;
+}
+
+.navigation-link button {
+    background: #5C5C5C !important;
+    padding: 20px;
+    min-width: 0;
+}
+
+.back button {
+    border-radius: 0 25px 0 0 !important;
+}
+
+.forth button {
+    border-radius: 25px 0 0 0 !important;
+}
+
+.navigation-link button:hover {
+    background: #333333 !important;
+}
+
+.navigation-link button img {
+    width: 25px;
+}
+
+.warning-surrounding {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    animation-name: backgroundColorPalette;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    /* linear is enabled default, it’s not necessary to add it make it work but it can make your code more expressive */
+}
+
+@keyframes backgroundColorPalette {
+    0% {
+        background: rgba(255, 255, 255, 0.5);
+    }
+    50% {
+        background: rgba(255, 255, 255, 0);
+    }
+    100% {
+        background: rgba(255, 155, 133, 0.5);
+    }
+}
+
+.warning-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 90vw;
+    max-width: 1000px;
+    transform: translate(-50%, -50%);
+    background-color: #00FFD0 !important;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.45);
+}
+
+.warning-container h3 {
+    color: #333331 !important;
+}
+.warning-container p {
+     color: #333331 !important;
+ }
+
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.video-container video {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.video-container iframe {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.video-close-button {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 15px 25px;
+    background: #5C5C5C;
+    border-radius: 0 0 0 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.video-close-button img {
+    width: 30px;
+}
+
+.loader-container {
+    position: absolute;
+    background: #5C5C5C !important;
+    padding: 20px;
+    min-width: 0;
+}
+
+.loader-left {
+    bottom: 0;
+    left: 0;
+    border-radius: 0 25px 0 0 !important;
+}
+
+.loader-right {
+    bottom: 0;
+    right: 0;
+    border-radius: 25px 0 0 0 !important;
+}
+
+.lds-dual-ring {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+}
+.lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

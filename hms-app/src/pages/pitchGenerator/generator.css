@@ -1,0 +1,13 @@
+.outer-container {
+    margin-top: 30vh !important;
+    transform: translate(0, -50%);
+}
+
+.hw-tiles {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: url("../../images/tile.png");
+    min-height: 30vh;
+    width: 100vw;
+}
