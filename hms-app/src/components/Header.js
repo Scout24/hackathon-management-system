@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import immoScoutLogo from '../images/is24_horizontal_teal.png'
 import './Header.css'
 
 const Header  = () => {
@@ -9,11 +8,7 @@ const Header  = () => {
 			<header className="hackweek-header">
 				<div className="grid grid-flex grid-align-center">
 					<div className="grid-item one-third">
-						<div className="scout24-logo">
-							<Link to="/">
-								<img id="scout24-logo" src={immoScoutLogo} alt="scout24 logo" />
-							</Link>
-						</div>
+						Logo
 					</div>
 
 					<div className="lit-background lit-background-container"></div>
