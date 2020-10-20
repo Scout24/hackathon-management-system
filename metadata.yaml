@@ -1,0 +1,12 @@
+id: "hackathon-management-system"
+product: "is24-hackathon"
+type: "application"
+vertical: "is24"
+owners:
+  - 'KnoffHoff@scout24.com'
+availability: false
+confidentiality: "company-internal"
+integrity: false
+links:
+  - type: "repository"
+    address: "https://github.com/Scout24/hackathon-management-system"
